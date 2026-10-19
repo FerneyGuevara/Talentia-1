@@ -1,5 +1,4 @@
-Estás listo… Empecemos 🚀
-LucIA estará contigo en cada estación de CorporIA para guiarte, motivarte y ayudarte a generar ideas como futuro emprendedor.<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
@@ -317,25 +316,17 @@ LucIA estará contigo en cada estación de CorporIA para guiarte, motivarte y ay
       margin-bottom: 0.9rem;
     }
 
-    #lucia .hero-card > p {
+    #lucia .hero-card > p,
+    #inicio .hero-card > p,
+    #exp1 .hero-card > p,
+    #exp2 .hero-card > p,
+    #exp3 .hero-card > p,
+    #futuro2 .hero-card > p {
       max-width: none;
     }
 
     #inicio .hero-card h2 {
       font-size: 1.85rem;
-    }
-
-    #inicio .hero-card > p {
-      max-width: none;
-    }
-
-    #exp1 .hero-card > p {
-      max-width: none;
-    }
-
-    #exp2 .hero-card > p,
-    #exp3 .hero-card > p {
-      max-width: none;
     }
 
     .grid-2 {
@@ -559,6 +550,182 @@ LucIA estará contigo en cada estación de CorporIA para guiarte, motivarte y ay
       margin-top: 0.6rem;
     }
 
+    /* ===== ESTILOS MÓDULO ADUANA TALEX (ENTREGAS Y PUNTOS) ===== */
+    .talex-controls {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 1.5rem;
+    }
+
+    .input-space {
+      width: 100%;
+      padding: 0.8rem 1rem;
+      border-radius: 10px;
+      border: 1px solid var(--border);
+      background: rgba(10, 22, 40, 0.85);
+      color: var(--text);
+      font-family: inherit;
+      font-size: 0.92rem;
+      outline: none;
+      transition: var(--transition);
+    }
+
+    .input-space:focus {
+      border-color: var(--secondary);
+      box-shadow: 0 0 12px rgba(0, 201, 167, 0.25);
+    }
+
+    .btn-space {
+      padding: 0.8rem 1.4rem;
+      border: none;
+      border-radius: 10px;
+      background: linear-gradient(135deg, var(--primary-light), var(--accent));
+      color: #fff;
+      font-family: inherit;
+      font-weight: 600;
+      font-size: 0.92rem;
+      cursor: pointer;
+      transition: var(--transition);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+    }
+
+    .btn-space:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(123, 97, 255, 0.4);
+    }
+
+    .btn-space:disabled {
+      opacity: 0.6;
+      cursor: not-allowed;
+      transform: none;
+    }
+
+    .btn-outline-space {
+      padding: 0.6rem 1rem;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      background: rgba(22, 43, 74, 0.6);
+      color: var(--text-muted);
+      font-family: inherit;
+      font-size: 0.82rem;
+      cursor: pointer;
+      transition: var(--transition);
+    }
+
+    .btn-outline-space:hover {
+      border-color: var(--secondary);
+      color: #fff;
+    }
+
+    .aprendiz-card {
+      background: linear-gradient(145deg, var(--card) 0%, rgba(18, 35, 63, 0.9) 100%);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 1.4rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 1rem;
+      transition: var(--transition);
+    }
+
+    .aprendiz-card:hover {
+      transform: translateY(-4px);
+      border-color: var(--secondary);
+      box-shadow: 0 10px 28px rgba(0, 201, 167, 0.15);
+    }
+
+    .aprendiz-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 0.8rem;
+    }
+
+    .aprendiz-name {
+      font-weight: 700;
+      font-size: 1.05rem;
+      color: #fff;
+    }
+
+    .status-pill {
+      display: inline-block;
+      padding: 0.25rem 0.7rem;
+      border-radius: 999px;
+      font-size: 0.75rem;
+      font-weight: 600;
+      margin-top: 0.3rem;
+    }
+
+    .status-ok {
+      background: rgba(0, 214, 143, 0.15);
+      color: var(--success);
+      border: 1px solid rgba(0, 214, 143, 0.35);
+    }
+
+    .status-pending {
+      background: rgba(244, 196, 48, 0.12);
+      color: var(--gold);
+      border: 1px solid rgba(244, 196, 48, 0.3);
+    }
+
+    .talex-score {
+      background: linear-gradient(135deg, rgba(244, 196, 48, 0.2), rgba(244, 196, 48, 0.05));
+      border: 1px solid rgba(244, 196, 48, 0.5);
+      padding: 0.45rem 0.9rem;
+      border-radius: 12px;
+      text-align: center;
+      flex-shrink: 0;
+    }
+
+    .talex-score .num {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: var(--gold);
+      display: block;
+      line-height: 1.1;
+    }
+
+    .talex-score .lbl {
+      font-size: 0.65rem;
+      color: var(--text-muted);
+      letter-spacing: 1px;
+    }
+
+    .progress-bar-bg {
+      width: 100%;
+      height: 8px;
+      background: rgba(255, 255, 255, 0.08);
+      border-radius: 999px;
+      overflow: hidden;
+    }
+
+    .progress-bar-fill {
+      height: 100%;
+      background: linear-gradient(90deg, var(--secondary), var(--gold));
+      border-radius: 999px;
+      transition: width 0.6s ease;
+    }
+
+    .form-group {
+      margin-bottom: 1.1rem;
+    }
+
+    .form-group label {
+      display: block;
+      font-size: 0.85rem;
+      color: var(--secondary);
+      font-weight: 600;
+      margin-bottom: 0.4rem;
+    }
+
     /* Coming soon */
     .coming-soon {
       text-align: center;
@@ -662,7 +829,7 @@ LucIA estará contigo en cada estación de CorporIA para guiarte, motivarte y ay
       <button class="tab-btn" data-tab="exp2">Ruta Intergaláctica</button>
       <button class="tab-btn" data-tab="exp3">Presentación de los Contenedores</button>
       <button class="tab-btn" data-tab="futuro1">Guía</button>
-      <button class="tab-btn" data-tab="futuro2">Futuro 2</button>
+      <button class="tab-btn" data-tab="futuro2">🚀 Aduana TALEX · Entregas</button>
       <button class="tab-btn" data-tab="futuro3">Futuro 3</button>
       <button class="tab-btn" data-tab="futuro4">Futuro 4</button>
       <button class="tab-btn" data-tab="futuro5">Futuro 5</button>
@@ -1039,7 +1206,7 @@ LucIA estará contigo en cada estación de CorporIA para guiarte, motivarte y ay
       </div>
     </section>
 
-    <!-- ===== GUÍA Y FUTURO 2-5 ===== -->
+    <!-- ===== GUÍA ===== -->
     <section id="futuro1" class="tab-content">
       <div class="hero-card">
         <h2>Guía · TravesIA 1. - CorporIA</h2>
@@ -1055,11 +1222,83 @@ LucIA estará contigo en cada estación de CorporIA para guiarte, motivarte y ay
       </div>
     </section>
 
+    <!-- ===== ADUANA TALEX: ENTREGAS Y PUNTOS (ANTES FUTURO 2) ===== -->
     <section id="futuro2" class="tab-content">
-      <div class="coming-soon">
-        <div class="icon">🪐</div>
-        <h2>Futuro 2 · Expansión</h2>
-        <p>Espacio preparado para nuevos módulos de aprendizaje en talento humano.<br>Mantente atento a las actualizaciones de LucIA.</p>
+      <div class="hero-card">
+        <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 1rem;">
+          <div>
+            <h2>🚀 Aduana Ciberespacial · Contenedores y TALEX</h2>
+            <p>
+              Bienvenido al centro de control de <strong>TalentIA</strong>. Aquí puedes depositar tus evidencias directamente en tu contenedor personal de Google Drive y consultar en tiempo real tus monedas <strong style="color: var(--gold);">✦ TALEX</strong> asignadas por el instructor.
+            </p>
+          </div>
+          <button class="btn-outline-space" onclick="configurarUrlScript()">⚙️ Conectar Google Sheet</button>
+        </div>
+      </div>
+
+      <div class="grid-2" style="align-items: start;">
+        
+        <!-- COLUMNA IZQUIERDA: CÁPSULA DE ENVÍO DE EVIDENCIAS -->
+        <div class="card" style="border-color: rgba(0, 201, 167, 0.45);">
+          <h3><span class="icon-badge badge-teal">📤</span> Enviar Evidencia a mi Contenedor</h3>
+          <p style="margin-bottom: 1.2rem;">Selecciona tu nombre, ingresa tu PIN secreto de 4 dígitos y adjunta tu archivo para enviarlo directamente a tu carpeta de Drive.</p>
+
+          <form id="formEntrega" onsubmit="enviarEvidenciaDrive(event)">
+            <div class="form-group">
+              <label for="selectAprendiz">1. Selecciona tu Nombre (Expedicionario):</label>
+              <select id="selectAprendiz" class="input-space" required>
+                <option value="">⏳ Cargando lista de aprendices...</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="inputPin">2. Ingresa tu PIN Secreto (4 dígitos):</label>
+              <input type="password" id="inputPin" class="input-space" placeholder="Ej: 1234" maxlength="10" required />
+            </div>
+
+            <div class="form-group">
+              <label for="inputArchivo">3. Selecciona el archivo de tu evidencia (PDF, Word, Excel, Imagen):</label>
+              <input type="file" id="inputArchivo" class="input-space" required />
+            </div>
+
+            <button type="submit" id="btnEnviar" class="btn-space" style="width: 100%; margin-top: 0.5rem;">
+              🚀 Enviar Evidencia a mi Carpeta Drive
+            </button>
+          </form>
+
+          <div id="mensajeEnvio" style="display: none; margin-top: 1.2rem; padding: 1rem; border-radius: 10px; font-weight: 600; font-size: 0.9rem;"></div>
+        </div>
+
+        <!-- COLUMNA DERECHA: RESUMEN E INSTRUCCIONES -->
+        <div class="card">
+          <h3><span class="icon-badge badge-gold">✦</span> ¿Cómo funciona la Aduana TALEX?</h3>
+          <ul class="justified-list" style="margin-top: 0.8rem;">
+            <li><strong>Privacidad Total:</strong> Tu archivo viaja de forma encriptada directamente a tu carpeta personal en el Google Drive del instructor. Ningún otro compañero puede ver ni borrar tus entregas.</li>
+            <li><strong>Registro Automático:</strong> En el instante en que envías tu archivo, el cuadro de control del instructor registra la fecha y hora exacta de tu entrega.</li>
+            <li><strong>Actualización en Vivo:</strong> Cuando el instructor evalúa tu contenedor en su hoja de cálculo, tus puntos <strong style="color: var(--gold);">✦ TALEX</strong> y observaciones se actualizan automáticamente en el tablero de abajo.</li>
+          </ul>
+          <div class="info-box" style="margin-top: 1.2rem;">
+            💡 <strong>Meta de la Travesía:</strong> Acumula tus primeros <strong>15 TALEX</strong> cumpliendo los retos de las estaciones de CorporIA.
+          </div>
+        </div>
+
+      </div>
+
+      <!-- TABLERO DE PUNTOS Y RANKING DE APRENDICES -->
+      <div class="talex-controls" style="margin-top: 2.5rem;">
+        <h2 class="section-title" style="margin: 0;">Tablero Galáctico de Puntos TALEX</h2>
+        <div style="display: flex; gap: 0.8rem; flex-wrap: wrap; flex: 1; max-width: 500px; justify-content: flex-end;">
+          <input type="text" id="buscadorAprendiz" class="input-space" placeholder="🔍 Buscar aprendiz por nombre..." oninput="filtrarTarjetas()" style="max-width: 280px; padding: 0.6rem 1rem;" />
+          <button class="btn-space" onclick="cargarDatosDesdeSheet()" style="padding: 0.6rem 1.1rem; font-size: 0.85rem;">
+            🔄 Actualizar Puntos
+          </button>
+        </div>
+      </div>
+
+      <div id="contenedorTarjetas" class="grid-3">
+        <div class="card" style="grid-column: 1 / -1; text-align: center; padding: 3rem;">
+          <p style="font-size: 1.1rem; color: var(--secondary);">⏳ Conectando con el satélite de Google Sheets...</p>
+        </div>
       </div>
     </section>
 
@@ -1095,7 +1334,31 @@ LucIA estará contigo en cada estación de CorporIA para guiarte, motivarte y ay
   </footer>
 
   <script>
-    // Sistema de pestañas
+    // =========================================================================
+    // 1. CONFIGURACIÓN DEL PUENTE CON GOOGLE SHEETS Y DRIVE (APPS SCRIPT)
+    // =========================================================================
+    // ¡Tu enlace de Google Apps Script ya está conectado aquí!
+    const URL_GOOGLE_SCRIPT_POR_DEFECTO = "https://script.google.com/macros/s/AKfycby6rlkE2pAN-sGJqGzfrONSir0n10-uw0eEQIfqiao52N9vSBRSBQ9gs-2wKJNiqVrA/exec";
+
+    function obtenerUrlScript() {
+      return localStorage.getItem("talentia_script_url") || URL_GOOGLE_SCRIPT_POR_DEFECTO;
+    }
+
+    function configurarUrlScript() {
+      const actual = obtenerUrlScript();
+      const nueva = prompt(
+        "URL de conexión con Google Apps Script (termina en /exec):",
+        actual
+      );
+      if (nueva && nueva.trim() !== "") {
+        localStorage.setItem("talentia_script_url", nueva.trim());
+        cargarDatosDesdeSheet();
+      }
+    }
+
+    // =========================================================================
+    // 2. SISTEMA DE NAVEGACIÓN POR PESTAÑAS
+    // =========================================================================
     const tabButtons = document.querySelectorAll('.tab-btn');
     const tabContents = document.querySelectorAll('.tab-content');
 
@@ -1103,18 +1366,188 @@ LucIA estará contigo en cada estación de CorporIA para guiarte, motivarte y ay
       btn.addEventListener('click', () => {
         const target = btn.dataset.tab;
 
-        // Quitar active de todos
         tabButtons.forEach(b => b.classList.remove('active'));
         tabContents.forEach(c => c.classList.remove('active'));
 
-        // Activar el seleccionado
         btn.classList.add('active');
         document.getElementById(target).classList.add('active');
 
-        // Scroll suave al inicio del contenido
         window.scrollTo({ top: 0, behavior: 'smooth' });
       });
     });
+
+    // =========================================================================
+    // 3. LECTURA DE APRENDICES Y PUNTOS DESDE GOOGLE SHEETS (doGet)
+    // =========================================================================
+    let listaGlobalAprendices = [];
+
+    async function cargarDatosDesdeSheet() {
+      const url = obtenerUrlScript();
+      const contenedor = document.getElementById("contenedorTarjetas");
+      const select = document.getElementById("selectAprendiz");
+
+      contenedor.innerHTML = `
+        <div class="card" style="grid-column: 1 / -1; text-align: center; padding: 3rem;">
+          <p style="font-size: 1.05rem; color: var(--secondary);">🔄 Sincronizando contenedores y puntos TALEX con Google Sheets...</p>
+        </div>
+      `;
+
+      try {
+        const respuesta = await fetch(url);
+        const datos = await respuesta.json();
+        listaGlobalAprendices = datos;
+
+        // Llenar el selector desplegable del formulario
+        select.innerHTML = `<option value="">-- Selecciona tu nombre en la lista --</option>`;
+        datos.forEach(aprendiz => {
+          const opcion = document.createElement("option");
+          opcion.value = aprendiz.fila;
+          opcion.textContent = aprendiz.nombre;
+          select.appendChild(opcion);
+        });
+
+        // Dibujar las tarjetas de puntos
+        dibujarTarjetas(datos);
+
+      } catch (error) {
+        contenedor.innerHTML = `
+          <div class="card" style="grid-column: 1 / -1; text-align: center; padding: 2.5rem;">
+            <h3 style="justify-content: center; color: #ff6b6b;">❌ No se pudo conectar con el Google Sheet</h3>
+            <p style="margin-top: 0.5rem;">Verifica que la URL sea correcta y que al implementar en Apps Script hayas elegido acceso para <strong>"Cualquiera"</strong>.</p>
+          </div>
+        `;
+      }
+    }
+
+    function dibujarTarjetas(lista) {
+      const contenedor = document.getElementById("contenedorTarjetas");
+      if (lista.length === 0) {
+        contenedor.innerHTML = `
+          <div class="card" style="grid-column: 1 / -1; text-align: center; padding: 2rem;">
+            <p>No se encontraron aprendices con ese nombre.</p>
+          </div>
+        `;
+        return;
+      }
+
+      contenedor.innerHTML = lista.map(ap => {
+        const entregado = String(ap.estado).toUpperCase().includes("ENTREGADO") && !String(ap.estado).toUpperCase().includes("SIN ENTREGAR");
+        const claseEstado = entregado ? "status-ok" : "status-pending";
+        const iconoEstado = entregado ? "✅" : "⏳";
+        const porcentaje = Math.min(100, Math.round((Number(ap.puntos) / 15) * 100));
+
+        return `
+          <div class="aprendiz-card">
+            <div>
+              <div class="aprendiz-header">
+                <div>
+                  <div class="aprendiz-name">${ap.nombre}</div>
+                  <span class="status-pill ${claseEstado}">${iconoEstado} ${ap.estado}</span>
+                </div>
+                <div class="talex-score">
+                  <span class="num">✦ ${ap.puntos}</span>
+                  <span class="lbl">TALEX</span>
+                </div>
+              </div>
+
+              <div style="margin-top: 1.1rem;">
+                <div style="display: flex; justify-content: space-between; font-size: 0.78rem; color: var(--text-muted); margin-bottom: 0.35rem;">
+                  <span>Progreso de la Travesía</span>
+                  <span>${ap.puntos} / 15 TALEX</span>
+                </div>
+                <div class="progress-bar-bg">
+                  <div class="progress-bar-fill" style="width: ${porcentaje}%;"></div>
+                </div>
+              </div>
+            </div>
+
+            <div style="background: rgba(10, 22, 40, 0.6); padding: 0.75rem 0.9rem; border-radius: 10px; border-left: 3px solid var(--secondary); font-size: 0.85rem; color: var(--text-muted);">
+              <strong style="color: #fff;">Observación del Instructor:</strong><br>
+              ${ap.observaciones}
+            </div>
+          </div>
+        `;
+      }).join("");
+    }
+
+    function filtrarTarjetas() {
+      const texto = document.getElementById("buscadorAprendiz").value.toLowerCase().trim();
+      const filtrados = listaGlobalAprendices.filter(ap =>
+        String(ap.nombre).toLowerCase().includes(texto)
+      );
+      dibujarTarjetas(filtrados);
+    }
+
+    // =========================================================================
+    // 4. SUBIDA DE ARCHIVO A LA CARPETA DE DRIVE DEL APRENDIZ (doPost)
+    // =========================================================================
+    function enviarEvidenciaDrive(event) {
+      event.preventDefault();
+      const url = obtenerUrlScript();
+      const fila = document.getElementById("selectAprendiz").value;
+      const pin = document.getElementById("inputPin").value;
+      const inputArchivo = document.getElementById("inputArchivo");
+      const btnEnviar = document.getElementById("btnEnviar");
+      const cajaMensaje = document.getElementById("mensajeEnvio");
+
+      if (!inputArchivo.files.length) return;
+      const archivo = inputArchivo.files[0];
+
+      // Convertimos el archivo a Base64 para enviarlo por el puente telefónico
+      const lector = new FileReader();
+      btnEnviar.disabled = true;
+      btnEnviar.textContent = "🛸 Teletransportando archivo a tu carpeta Drive...";
+      cajaMensaje.style.display = "block";
+      cajaMensaje.style.background = "rgba(0, 201, 167, 0.12)";
+      cajaMensaje.style.color = "var(--secondary)";
+      cajaMensaje.textContent = "⏳ Subiendo evidencia, por favor espera unos segundos...";
+
+      lector.onload = async function() {
+        const base64Limpio = lector.result.split(",")[1];
+
+        const paquete = {
+          fila: Number(fila),
+          pin: pin,
+          nombreArchivo: archivo.name,
+          tipoMime: archivo.type || "application/octet-stream",
+          archivoBase64: base64Limpio
+        };
+
+        try {
+          const respuesta = await fetch(url, {
+            method: "POST",
+            body: JSON.stringify(paquete)
+          });
+
+          const resultado = await respuesta.json();
+
+          if (resultado.exito) {
+            cajaMensaje.style.background = "rgba(0, 214, 143, 0.18)";
+            cajaMensaje.style.color = "var(--success)";
+            cajaMensaje.textContent = resultado.mensaje;
+            document.getElementById("formEntrega").reset();
+            // Recargamos las tarjetas para que se vea el "✅ Entregado" de inmediato
+            cargarDatosDesdeSheet();
+          } else {
+            cajaMensaje.style.background = "rgba(255, 107, 107, 0.18)";
+            cajaMensaje.style.color = "#ff6b6b";
+            cajaMensaje.textContent = resultado.mensaje;
+          }
+        } catch (err) {
+          cajaMensaje.style.background = "rgba(255, 107, 107, 0.18)";
+          cajaMensaje.style.color = "#ff6b6b";
+          cajaMensaje.textContent = "❌ Error de conexión al enviar el archivo.";
+        } finally {
+          btnEnviar.disabled = false;
+          btnEnviar.textContent = "🚀 Enviar Evidencia a mi Carpeta Drive";
+        }
+      };
+
+      lector.readAsDataURL(archivo);
+    }
+
+    // Cargar datos automáticamente al abrir la página
+    window.addEventListener("DOMContentLoaded", cargarDatosDesdeSheet);
   </script>
 </body>
 </html>
